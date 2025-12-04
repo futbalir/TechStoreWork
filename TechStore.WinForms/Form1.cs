@@ -20,14 +20,11 @@ namespace TechStore.WinForms
         public event EventHandler AddProductRequested;
         public event EventHandler<Product> EditProductRequested;
         public event EventHandler<int> DeleteProductRequested;
-        
-
-        private ProductsPresenter _presenter;
-
-        
+                        
         private bool _isDataLoading = false;
         private bool _isEditing = false;
         
+
 
         /// <summary>
         /// Инициализирует главную форму приложения
@@ -37,17 +34,14 @@ namespace TechStore.WinForms
         public Form1(IProductBusinessService businessService)
         {
             InitializeComponent();
-
-            Console.WriteLine($"=== FORM1 CONSTRUCTOR ===");
-            Console.WriteLine($"BusinessService hash: {businessService.GetHashCode()}");
-
-            _presenter = new ProductsPresenter(this, businessService);
-            Console.WriteLine($"=== PRESENTER CREATED ===\n");
-
+                       
             dataGridViewProducts.DataError += DataGridViewProducts_DataError;
-            dataGridViewProducts.AutoGenerateColumns = false;
+            dataGridViewProducts.AutoGenerateColumns = true;
+
+            this.Load += (s, e) => RefreshRequested?.Invoke(this, EventArgs.Empty);
         }
 
+        
         /// <summary>
         /// Отображает список товаров в DataGridView
         /// </summary>

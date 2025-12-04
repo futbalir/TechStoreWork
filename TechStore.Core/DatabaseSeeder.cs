@@ -6,12 +6,12 @@ namespace TechStore.Core
 {
     public class DatabaseSeeder
     {
-        public DatabaseSeeder(IProductBusinessService businessService) // ← ИЗМЕНИЛ ТИП ЗАВИСИМОСТИ!
+        public DatabaseSeeder(IProductBusinessService businessService) 
         {
             SeedSampleData(businessService);
         }
 
-        private void SeedSampleData(IProductBusinessService businessService) // ← ИЗМЕНИЛ ТИП ПАРАМЕТРА!
+        private void SeedSampleData(IProductBusinessService businessService) 
         {
             // Используем метод GetAll из бизнес-сервиса
             if (businessService.GetAll().Count > 0) return;

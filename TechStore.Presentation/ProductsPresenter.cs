@@ -5,8 +5,10 @@ using System.Linq;
 using TechStore.Core.Interfaces;
 using TechStore.Models;
 using TechStore.Shared;
+using System.Windows.Forms;
+using TechStore.WinForms;
 
-namespace TechStore.WinForms
+namespace TechStore.Presentation
 {
     /// <summary>
     /// Presenter в паттерне MVP - координатор между View и бизнес-логикой

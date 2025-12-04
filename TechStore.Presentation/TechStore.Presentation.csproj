@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechStore.Core\TechStore.Core.csproj" />
+    <ProjectReference Include="..\TechStore.Models\TechStore.Models.csproj" />
+    <ProjectReference Include="..\TechStore.Shared\TechStore.Shared.csproj" />
+    <ProjectReference Include="..\TechStore.WinForms\TechStore.WinForms.csproj" />
+  </ItemGroup>
+
+</Project>
