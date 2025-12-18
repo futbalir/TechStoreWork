@@ -51,6 +51,8 @@ namespace TechStore.Core
 
             
             Bind<DatabaseSeeder>().ToSelf().InSingletonScope();
+
+           
         }
     }
 }

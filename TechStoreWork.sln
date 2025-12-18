@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechStore.Models", "TechSto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechStore.Shared", "TechStore.Shared\TechStore.Shared.csproj", "{82C52777-F15A-496C-8392-38A7ED3B3D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechStore.Presentation", "TechStore.Presentation\TechStore.Presentation.csproj", "{B880B7DA-F2F7-4087-810A-BC05F630A0CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechStore.Presentation", "TechStore.Presentation\TechStore.Presentation.csproj", "{B880B7DA-F2F7-4087-810A-BC05F630A0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechStore.WpfApp", "TechStore.WpfApp\TechStore.WpfApp.csproj", "{9ACE46C7-00BC-445D-A49E-B7D71ED802C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{B880B7DA-F2F7-4087-810A-BC05F630A0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B880B7DA-F2F7-4087-810A-BC05F630A0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B880B7DA-F2F7-4087-810A-BC05F630A0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACE46C7-00BC-445D-A49E-B7D71ED802C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACE46C7-00BC-445D-A49E-B7D71ED802C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACE46C7-00BC-445D-A49E-B7D71ED802C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACE46C7-00BC-445D-A49E-B7D71ED802C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
